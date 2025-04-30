@@ -1,5 +1,5 @@
 {
-  "name": "cojocarudavid-me",
+  "name": "ceccuentos-web",
   "type": "module",
   "version": "2.0.1",
   "license": "MIT",
@@ -10,12 +10,12 @@
   "browserslist": "> 0.25%, not dead",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cojocaru-david/cojocarudavid.me.git"
+    "url": "https://github.com/ceccuentos/ceccuentos-web"
   },
   "bugs": {
-    "url": "https://github.com/cojocaru-david/cojocarudavid.me/issues"
+    "url": "https://github.com/ceccuentos/ceccuentos-web"
   },
-  "homepage": "https://cojocarudavid.me",
+  "homepage": "https://ceccuentos.com",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -37,6 +37,7 @@
     "astro-icon": "^1.1.5",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^16.5.0",
     "framer-motion": "^12.8.0",
     "lucide-react": "^0.483.0",
     "react": "^19.1.0",

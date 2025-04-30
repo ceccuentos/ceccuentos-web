@@ -2,22 +2,36 @@
 import { Icon } from "astro-icon/components";
 import { FooterSocials } from "@data/socials";
 
-let factData = { fact: "Loading a purr-fect fact..." };
+let factData = { frase: "Cargando frases...", autor: "" };
 try {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout to prevent long loading
 
-  const factResponse = await fetch("https://catfact.ninja/fact", {
-    headers: { Accept: "application/json" },
-    signal: controller.signal,
-  });
+  const factResponse = await fetch(
+    //"https://oinqclfhfcwzdwctkslm.supabase.co/rest/v1/rpc/frase_aleatoria",
+    import.meta.env.SUPABASE_API_URL,
+    {
+      method: "POST",
+      headers: {
+        apikey: import.meta.env.SUPABASE_API_KEY,
+        //"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbnFjbGZoZmN3emR3Y3Rrc2xtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTg3NDAyMCwiZXhwIjoyMDYxNDUwMDIwfQ.p_BAdGgbvQ0qOARrAV3SO8zg_-d8-Ag4eM-YstgXl4c",
+        Authorization: import.meta.env.SUPABASE_AUTH_BEARER,
+        //"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbnFjbGZoZmN3emR3Y3Rrc2xtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTg3NDAyMCwiZXhwIjoyMDYxNDUwMDIwfQ.p_BAdGgbvQ0qOARrAV3SO8zg_-d8-Ag4eM-YstgXl4c",
+        Accept: "application/json",
+      },
+      // headers: { Accept: "application/json" },
+      signal: controller.signal,
+    }
+  );
 
   clearTimeout(timeoutId);
   if (factResponse.ok) {
-    factData = await factResponse.json();
+    //factData = await factResponse.json();
+    const data = await factResponse.json();
+    factData = data[0] || { frase: "No se encontró frase" };
   }
 } catch (error) {
-  console.error("Failed to fetch cat fact:", error);
+  console.error("Falló carga de frases:", error);
 }
 ---
 
@@ -31,7 +45,8 @@ try {
   };
 
   const setupEmoji = () => {
-    const emojis = ["😺", "🐱", "😸", "😻", "🙀", "😽", "😹", "😿", "😾"];
+    //const emojis = ["😺", "🐱", "😸", "😻", "🙀", "😽", "😹", "😿", "😾"];
+    const emojis = ["😁", "😀", "🙃", "😉", "🤪", "🫣", "🤭", "🫢", "🫨"];
     const emojiContainer = document.getElementById("random-emoji");
     if (emojiContainer) {
       emojiContainer.innerText =
@@ -53,11 +68,11 @@ try {
       <!-- Left section -->
       <div class="flex flex-col items-center md:items-start">
         <div class="text-sm font-medium">
-          2021 - <span id="year"></span> &copy;&nbsp;<a
-            href="https://github.com/cojocaru-david"
+          2012 - <span id="year"></span> &copy;&nbsp;<a
+            href="https://github.com/ceccuentos"
             class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition duration-300"
             target="_blank"
-            rel="noopener noreferrer">David Cojocaru</a
+            rel="noopener noreferrer">Cec</a
           >
         </div>
         <div class="text-xs mt-1 text-neutral-600 dark:text-neutral-400">
@@ -66,23 +81,27 @@ try {
         </div>
       </div>
 
-      <!-- Middle section for cat fact -->
+      <!-- Middle section for fact -->
       <div class="w-full md:w-auto max-w-sm md:max-w-lg my-4 md:my-0">
         <div
           class="bg-neutral-100/30 dark:bg-neutral-800/30 p-3 rounded-lg shadow-sm hover:shadow transition duration-300 border border-neutral-200/30 dark:border-neutral-700/30"
         >
           <p class="text-xs italic mb-1 text-neutral-600 dark:text-neutral-400">
-            Random Cat Fact:
+            Random Frase Vip:
           </p>
           <p class="text-sm font-medium text-neutral-800 dark:text-neutral-200">
-            "{factData?.fact || "Loading a purr-fect fact..."}"
+            <!-- "{factData?.fact || "Cargando Frases..."}" -->
+            "{factData?.frase || "Cargando Frases..."}"
+          </p>
+          <p class="text-xs italic text-neutral-600 dark:text-neutral-400">
+            — {factData?.autor || "Autor desconocido"}
           </p>
         </div>
       </div>
 
       <!-- Right section -->
       <div class="flex flex-col items-start gap-3">
-        <span class="text-sm font-medium">Follow me on:</span>
+        <span class="text-sm font-medium">Sígueme en:</span>
         <div class="flex items-center gap-3">
           {
             FooterSocials.map((social) => (
@@ -92,7 +111,7 @@ try {
                 title={social.name}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Follow me on ${social.name}`}
+                aria-label={`Sígueme en: ${social.name}`}
               >
                 <Icon name={social.icon} class="w-8 h-8" />
               </a>

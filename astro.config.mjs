@@ -16,6 +16,6 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
-  site: "https://cojocarudavid.me",
+  site: "https://www.ceccuentos.com/",
   integrations: [icon(), sitemap(), react()],
 });

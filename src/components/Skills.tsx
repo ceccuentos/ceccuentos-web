@@ -25,6 +25,24 @@ import {
   SiDiscord,
   SiSpotify,
   SiBrave,
+
+  SiReact,
+  SiDocker,
+  SiKubernetes,
+  SiAmazons3,
+  SiAmazonwebservices,
+  SiAmazonec2,
+  SiDotnet,
+  SiPython,
+  SiPostgresql,
+  SiRender,
+  SiOpenai,
+  SiKalilinux,
+  SiOwasp,
+  SiFlutter,
+
+
+
 } from "react-icons/si";
 import { FileCode, LucideAppWindow, Code } from "lucide-react";
 
@@ -40,6 +58,7 @@ const iconMap: { [key: string]: IconType } = {
   "cib:cloudflare": SiCloudflare,
   "cib:netlify": SiNetlify,
   "mdi:ubuntu": SiUbuntu,
+
   "mdi:language-lua": SiLua,
   "mdi:language-go": SiGo,
   "mdi:nodejs": SiNodedotjs,
@@ -53,6 +72,26 @@ const iconMap: { [key: string]: IconType } = {
   "mdi:visual-studio-code": FileCode,
   "mdi:windows": LucideAppWindow,
   "mdi:visual-studio": Code,
+
+  "mdi:React": SiReact,
+  "mdi:SiDocker": SiDocker,
+  "mdi:SiAmazons3": SiAmazons3,
+  "mdi:SiAmazonwebservices": SiAmazonwebservices,
+
+  "mdi:SiAmazonec2": SiAmazonec2,
+  "mdi:SiDotnet": SiDotnet,
+  "mdi:SiPython": SiPython,
+  "cib:SiPostgresql": SiPostgresql,
+  "cib:Render": SiRender,
+  "mdi:SiKubernetes": SiKubernetes,
+  "mdi:SiOpenai": SiOpenai,
+  "mdi:SiKalilinux": SiKalilinux,
+  "mdi:SiOwasp": SiOwasp,
+  "mdi:SiFlutter": SiFlutter,
+
+
+
+
 };
 
 const categories = Object.keys(technologies);

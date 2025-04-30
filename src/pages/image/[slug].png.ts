@@ -51,15 +51,18 @@ export async function GET(context: APIContext) {
         </div>
 
         <div tw="flex items-center bg-neutral-800/50 rounded-xl px-4 py-2">
-          <img src="https://i.imgur.com/VQfJ5Iz.png" tw="w-18 h-13" />
+          <img src="https://imgur.com/a/AHtKEQH" tw="w-18 h-13" />
           <div tw="flex flex-col ml-4 border-l border-neutral-700/50 pl-4">
-            <span tw="text-neutral-400 font-semibold">David Cojocaru</span>
-            <span tw="text-neutral-400 text-sm">cojocaru-david</span>
+            <span tw="text-neutral-400 font-semibold">Cristián E. Contreras Cabrera</span>
+            <span tw="text-neutral-400 text-sm">ceccuentos</span>
           </div>
         </div>
       </div>
     </div>
   `;
+
+  //
+  //<img src="https://i.imgur.com/VQfJ5Iz.png" tw="w-18 h-13" />
 
   const svg = await satori(markup, {
     fonts: [

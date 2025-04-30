@@ -1,11 +1,12 @@
-export const tag: string = "@cojocaru-david";
-export const author: string = "David Cojocaru";
-export const github: string = "https://github.com/cojocaru-david";
+export const tag: string = "@ceccuentos";
+export const author: string = "Cristián E. Contreras Cabrera";
+export const github: string = "https://github.com/ceccuentos";
 
-export const title: string = "David Cojocaru - Junior Software Developer";
+export const title: string = "Cristián E. Contreras Cabrera - Software Developer";
 export const description: string =
-  "I am a self-taught developer who loves to build things for the web. With 5+ years of coding experience, I'm passionate about creating elegant solutions and exploring new technologies. Currently working on exciting projects while remaining open to new opportunities.";
-export const country: string = "Romania";
+  //"I am a self-taught developer who loves to build things for the web. With 5+ years of coding experience, I'm passionate about creating elegant solutions and exploring new technologies. Currently working on exciting projects while remaining open to new opportunities.";
+  "Desde la mirada personal como Ingeniero Civil Industrial, PMP®, desarrollador de software y líder de proyectos, este sitio reúne experiencias construidas a lo largo de años trabajando con equipos, diseñando soluciones y explorando el mundo de la tecnología. Aquí encontrarás proyectos, ideas, aprendizajes y también un rincón para los hobbies e intereses que inspiran cada paso del camino.";
+export const country: string = "Chile";
 
 export const FooterSocials = [
   {
@@ -15,12 +16,12 @@ export const FooterSocials = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/cojocaru-david/",
+    url: "https://www.linkedin.com/in/cec/",
     icon: "mdi:linkedin",
   },
   {
     name: "Email",
-    url: "mailto:contact@cojocarudavid.me",
+    url: "mailto:cristian.contreras@codevsys.cl",
     icon: "mdi:email",
   },
 ];
@@ -36,23 +37,25 @@ interface Meta {
 }
 
 export const defaultMeta: Meta = {
-  title: "David Cojocaru - Home",
+  title: "Cristián E. Contreras Cabrera - Home",
   description:
-    "Discover the portfolio and blog of David Cojocaru, a 16-year-old software developer and cybersecurity enthusiast from Romania. Explore his expertise in web development, programming languages, and more.",
+    "Descubre el portafolio y blog de Cristián Contreras, Ingeniero Civil Industrial, PMP, desarrollador de software, líder de proyectos y entusiasta de la ciberseguridad. Explora su experiencia en desarrollo web, gestión de proyectos, lenguajes de programación y más, junto con contenidos sobre sus hobbies e intereses personales.",
   keywords: [
-    "david cojocaru",
-    "junior software developer",
-    "junior",
+    "Cristián Contreras",
+    "software developer",
+    "Ingeniero Civil Industrial",
     "cybersecurity enthusiast",
     "web development",
-    "programming",
+    "PMP Project Manager",
     "portfolio",
     "blog",
-    "romania",
+    "Chile",
+    "Gestión de Proyectos",
+    "Líder de Proyectos de Tecnología",
   ],
   ogImage: {
     src: "/banner.png",
-    alt: "David Cojocaru - Home",
+    alt: "Cristián Contreras - Home",
   },
 };
 
@@ -77,7 +80,7 @@ export const technologies: Technologies = {
     { text: "HTML", logo: "mdi:language-html5" },
     { text: "JavaScript", logo: "mdi:language-javascript" },
     { text: "CSS", logo: "mdi:language-css3" },
-    { text: "PHP", logo: "mdi:language-php" },
+    // { text: "PHP", logo: "mdi:language-php" },
     { text: "Astro", logo: "simple-icons:astro" },
     { text: "Tailwind CSS", logo: "mdi:tailwind" },
   ],
@@ -86,18 +89,24 @@ export const technologies: Technologies = {
     { text: "Git", logo: "mdi:git" },
   ],
   "Hosting and Cloud Services": [
+    { text: "Aws", logo: "mdi:SiAmazonwebservices" },
     { text: "DigitalOcean", logo: "mdi:digital-ocean" },
-    { text: "Cloudflare", logo: "cib:cloudflare" },
+    // { text: "Cloudflare", logo: "cib:cloudflare" },
+    { text: "Render", logo: "cib:Render" },
     { text: "Netlify", logo: "cib:netlify" },
   ],
   "Operating Systems": [
     { text: "Windows", logo: "mdi:windows" },
     { text: "Ubuntu", logo: "mdi:ubuntu" },
+    { text: "Kali", logo: "mdi:SiKalilinux" },
   ],
   "Other Programming Languages and Technologies": [
-    { text: "Lua", logo: "mdi:language-lua" },
-    { text: "Golang", logo: "mdi:language-go" },
+    { text: "React", logo: "mdi:React" },
+    // { text: "Golang", logo: "mdi:language-go" },
     { text: "Node.js", logo: "mdi:nodejs" },
+    { text: ".NET", logo: "mdi:SiDotnet" },
+    { text: "Python", logo: "mdi:SiPython" },
+    { text: "Flutter", logo: "mdi:SiFlutter" },
   ],
   "Web Servers": [
     { text: "Apache", logo: "cib:apache" },
@@ -106,11 +115,16 @@ export const technologies: Technologies = {
   Databases: [
     { text: "MySQL", logo: "cib:mysql" },
     { text: "MongoDB", logo: "cib:mongodb" },
+    { text: "Postgresql", logo: "cib:SiPostgresql" },
   ],
   "Other Software": [
-    { text: "Discord", logo: "mdi:discord" },
-    { text: "Spotify", logo: "mdi:spotify" },
+    // { text: "Discord", logo: "mdi:discord" },
+    // { text: "Spotify", logo: "mdi:spotify" },
     { text: "Visual Studio", logo: "mdi:visual-studio" },
-    { text: "Brave", logo: "cib:brave" },
+    { text: "Docker", logo: "mdi:SiDocker" },
+    { text: "Kubernetes", logo: "mdi:SiKubernetes" },
+    { text: "OpenAi", logo: "mdi:SiOpenai" },
+    { text: "Owasp", logo: "mdi:SiOwasp" },
+
   ],
 };

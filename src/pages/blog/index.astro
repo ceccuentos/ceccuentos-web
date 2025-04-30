@@ -8,9 +8,9 @@ const posts = (await getCollection("blog")).sort(
   (a, b) =>
     new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
-const title = "David Cojocaru - Blog";
+const title = "Cristián E. Contreras Cabrera - Blog";
 const description =
-  "My personal collection of code snippets, starter guides, tutorials and interesting things I found online. I hope you find something useful here.";
+  "Mi colección personal de fragmentos de código, guías introductorias, tutoriales y cosas interesantes que he encontrado en en tiempo. Espero que encuentres algo útil aquí.";
 ---
 
 <AppLayout title={title} description={description}>

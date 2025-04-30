@@ -19,10 +19,10 @@
 
 ## 🌟 Features
 
-✅ **Blazing fast** - Optimized for performance and SEO.  
-🎨 **Modern & responsive** - Tailwind CSS for easy customization.  
-🔒 **Secure & reliable** - Follows best security practices.  
-📱 **Mobile-friendly** - Fully responsive across devices.  
+✅ **Blazing fast** - Optimized for performance and SEO.
+🎨 **Modern & responsive** - Tailwind CSS for easy customization.
+🔒 **Secure & reliable** - Follows best security practices.
+📱 **Mobile-friendly** - Fully responsive across devices.
 📝 **Blog support** - Share insights and experiences.
 
 ---
