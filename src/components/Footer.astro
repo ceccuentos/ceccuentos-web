@@ -7,22 +7,18 @@ try {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 3000); // 3 second timeout to prevent long loading
 
-  const factResponse = await fetch(
-    //"https://oinqclfhfcwzdwctkslm.supabase.co/rest/v1/rpc/frase_aleatoria",
-    import.meta.env.SUPABASE_API_URL,
-    {
-      method: "POST",
-      headers: {
-        apikey: import.meta.env.SUPABASE_API_KEY,
-        //"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbnFjbGZoZmN3emR3Y3Rrc2xtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTg3NDAyMCwiZXhwIjoyMDYxNDUwMDIwfQ.p_BAdGgbvQ0qOARrAV3SO8zg_-d8-Ag4eM-YstgXl4c",
-        Authorization: import.meta.env.SUPABASE_AUTH_BEARER,
-        //"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pbnFjbGZoZmN3emR3Y3Rrc2xtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NTg3NDAyMCwiZXhwIjoyMDYxNDUwMDIwfQ.p_BAdGgbvQ0qOARrAV3SO8zg_-d8-Ag4eM-YstgXl4c",
-        Accept: "application/json",
-      },
-      // headers: { Accept: "application/json" },
-      signal: controller.signal,
-    }
-  );
+  const factResponse = await fetch(import.meta.env.SUPABASE_API_URL, {
+    method: "POST",
+    headers: {
+      apikey: import.meta.env.SUPABASE_API_KEY,
+
+      Authorization: import.meta.env.SUPABASE_AUTH_BEARER,
+
+      Accept: "application/json",
+    },
+
+    signal: controller.signal,
+  });
 
   clearTimeout(timeoutId);
   if (factResponse.ok) {
