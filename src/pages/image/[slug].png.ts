@@ -47,7 +47,7 @@ export async function GET(context: APIContext) {
         tw="w-full h-1/5 border-t border-neutral-700/50 flex p-10 items-center justify-between text-2xl"
       >
         <div tw="flex items-center">
-          <span tw="ml-3 text-neutral-500">cojocarudavid.me</span>
+          <span tw="ml-3 text-neutral-500">Ceccuentos</span>
         </div>
 
         <div tw="flex items-center bg-neutral-800/50 rounded-xl px-4 py-2">

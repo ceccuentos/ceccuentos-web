@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "cojocarudavid-me",
+      "name": "ceccuentos",
       "dependencies": {
         "@astrojs/react": "^4.2.3",
         "@astrojs/rss": "^4.0.11",

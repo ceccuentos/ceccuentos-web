@@ -1,9 +1,9 @@
 ---
 title: "5 pasos clave para automatizar respaldos seguros con Rclone"
-slug: "5-pasos-clave-para-automatizar-respaldos-seguros-con-Rclone"
+slug: "5-pasos-para-automatizar-respaldos-con-Rclone"
 
 heroAlt: "Automatiza respaldos en la nube con seguridad y control usando Rclone"
-description: "Descubre cómo crear un control de seguridad que automatiza respaldos periódicos desde Google Drive a Dropbox con rclone, minimizando errores humanos y evitando límites de la API. Incluye script Bash listo para producción."
+description: "Automatiza respaldos seguros entre Google Drive y Dropbox con Rclone. Controla errores, evita cuotas y ejecuta scripts confiables con filtros y logs."
 pubDate: 2025-05-08
 updatedDate: 2025-05-08
 tags:
@@ -151,4 +151,3 @@ Hemos implementado un **control de seguridad robusto y automatizado** que permit
 
 ---
 
-¿Te gustaría extender este control con cifrado de archivos o respaldo incremental con versionado? ¡Ese podría ser tu siguiente nivel!
