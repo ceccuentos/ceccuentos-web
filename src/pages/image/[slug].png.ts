@@ -54,7 +54,7 @@ export async function GET(context: APIContext) {
           <img src="https://i.imgur.com/7UGULf0.png" tw="w-18 h-13" />
           <div tw="flex flex-col ml-4 border-l border-neutral-700/50 pl-4">
             <span tw="text-neutral-400 font-semibold">Cristián E. Contreras Cabrera</span>
-            <span tw="text-neutral-400 text-sm">ceccuentos</span>
+            <span tw="text-neutral-400 text-sm">Ceccuentos</span>
           </div>
         </div>
       </div>
