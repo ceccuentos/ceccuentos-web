@@ -1,26 +1,29 @@
 [
   {
-    "name": "cojocaru-david",
+    "name": "Asistente Panel",
     "stars": 33,
-    "url": "https://github.com/cojocaru-david/cojocarudavid.me",
-    "description": "Blazing fast personal website built with Astro.js and styled with Tailwind CSS.",
+    "url": "https://github.com/ceccuentos/back-panelrag",
+    "description": "Asistente de IA Generativa para jurisprudencia de dictámenes de discrepancias eléctricas",
     "languages": [
-      "Astro",
-      "TypeScript",
-      "JavaScript",
-      "CSS"
+      "python",
+      "javascript",
+      "html",
+      "css"
     ],
     "role": "author"
   },
   {
-    "name": "david-dark-code",
+    "name": "Web Codevsys",
     "stars": 12,
-    "url": "https://github.com/cojocaru-david/david-dark-code",
-    "website": "https://marketplace.visualstudio.com/items?itemName=cojocaru-david.david-dark-code",
-    "description": "David Dark is a dark theme for VS Code. It is based on the github theme and the default dark theme. It is designed to be easy on the eyes and to be used for long periods of time.",
+    "url": "https://github.com/ceccuentos/codevsys-web",
+    "website": "https://www.codevsys.cl",
+    "description": "Website for Codevsys, a company that provides IT services.",
     "languages": [
-      "NodeJS",
-      "JSON"
+      "astro",
+      "react",
+      "javascript",
+      "html",
+      "css"
     ],
     "role": "author"
   }

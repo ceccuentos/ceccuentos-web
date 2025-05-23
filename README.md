@@ -1,129 +1,134 @@
-# cojocarudavid.me
+# Cec Personal Website
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/cojocaru-david/cojocarudavid.me/ci.yml)
-![License](https://img.shields.io/github/license/cojocaru-david/cojocarudavid.me)
-![Version](https://img.shields.io/github/package-json/v/cojocaru-david/cojocarudavid.me)
-![Stars](https://img.shields.io/github/stars/cojocaru-david/cojocarudavid.me?style=social)
+¡Bienvenido/a al repositorio de la página personal de **Cec**!
 
-👋 Hi, I'm **David**, a 17-year-old coder from Romania. 🚀 Passionate about web development with **JavaScript, PHP, and React**. Linux enthusiast automating tasks with Bash.
+Este proyecto es una versión moderna, rápida y responsiva del sitio personal de Cristián E. Contreras Cabrera, desarrollado con Astro, React y Tailwind CSS. Aquí encontrarás información profesional, proyectos, publicaciones y enlaces de contacto.
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Descripción
 
-**cojocarudavid.me** is my **personal portfolio website**, built with **Astro.js** and styled using **Tailwind CSS**. It serves as a hub for my projects, blog posts, and personal updates.
-
-![Website Screenshot](.github/image.png)
+**ceccuentos-web** es el sitio personal y portafolio de Cristián E. Contreras Cabrera (Cec), orientado a destacar su trabajo profesional, publicaciones, proyectos y presencia digital. El sitio está optimizado para SEO, es instalable como PWA y ofrece una experiencia moderna y responsiva en todos los dispositivos.
 
 ---
 
-## 🌟 Features
+## 🌟 Características
 
-✅ **Blazing fast** - Optimized for performance and SEO.
-🎨 **Modern & responsive** - Tailwind CSS for easy customization.
-🔒 **Secure & reliable** - Follows best security practices.
-📱 **Mobile-friendly** - Fully responsive across devices.
-📝 **Blog support** - Share insights and experiences.
-
----
-
-## 🛠️ Tech Stack
-
-- **[Astro.js](https://astro.build/)** - Static site generator.
-- **[React.js](https://reactjs.org/)** - Used for components.
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework.
-- **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript at scale.
-- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - Core language.
-- **[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Styles and layouts.
+- Diseño moderno y responsivo
+- Blog y portafolio de proyectos
+- PWA: Instalación como app en dispositivos móviles
+- Optimización SEO y OpenGraph
+- Código modular y fácil de mantener
+- Despliegue sencillo en Netlify, Vercel o cualquier hosting estático
+- Accesibilidad y buenas prácticas web
 
 ---
 
-## 📚 Setup & Installation
+## 🧰 Tecnologías principales
 
-### Prerequisites
+- [Astro](https://astro.build/) (framework principal)
+- [React.js](https://reactjs.org/) (componentes interactivos)
+- [Tailwind CSS](https://tailwindcss.com/) (estilos)
+- [TypeScript](https://www.typescriptlang.org/) (opcional)
+- [PWA](https://web.dev/progressive-web-apps/)
 
-Ensure you have the following installed:
+---
 
-- [Node.js](https://nodejs.org/) and npm.
-- [Git](https://git-scm.com/).
+## 📁 Estructura del proyecto
 
-### Installation Steps
+```
+ceccuentos-web/
+├── public/               # Archivos estáticos (favicon, manifest, imágenes)
+├── src/
+│   ├── components/       # Componentes reutilizables
+│   ├── layouts/          # Layouts globales y de página
+│   ├── pages/            # Rutas y páginas del sitio
+│   ├── data/             # Datos y configuración del sitio
+│   └── assets/           # Imágenes y recursos
+├── package.json          # Dependencias y scripts
+├── astro.config.mjs      # Configuración de Astro
+├── tailwind.config.cjs   # Configuración de Tailwind
+└── README.md             # Este archivo
+```
 
-1. **Clone the repository:**
+---
+
+## 🛠️ Instalación y uso local
+
+### Prerrequisitos
+
+- [Node.js](https://nodejs.org/) (v18+ recomendado)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+
+### Pasos
+
+1. **Clona el repositorio:**
 
    ```sh
-   git clone https://github.com/cojocaru-david/cojocarudavid.me.git
+   git clone https://github.com/ceccuentos/ceccuentos-web.git
+   cd ceccuentos-web
    ```
 
-2. **Navigate to the project directory:**
-
-   ```sh
-   cd cojocarudavid.me
-   ```
-
-3. **Install dependencies:**
+2. **Instala dependencias:**
 
    ```sh
    npm install
+   # o
+   yarn install
    ```
 
-4. **Run the development server:**
+3. **Inicia el servidor de desarrollo:**
+
    ```sh
    npm run dev
+   # o
+   yarn dev
    ```
 
----
-
-## 🎯 Usage
-
-### Development Mode
-
-Run the local development server:
-
-```sh
-npm run dev
-```
-
-### Production Build
-
-Generate a production-ready build:
-
-```sh
-npm run build
-```
+4. **Abre tu navegador en** `http://localhost:4321` (o el puerto indicado)
 
 ---
 
-## 🤝 Contributing
+## 🌐 Despliegue
 
-Contributions are welcome! Please follow the [contributing guidelines](CONTRIBUTING.md) before submitting changes.
+Puedes desplegar fácilmente este sitio en plataformas como **Netlify**, **Vercel** o cualquier hosting estático compatible con Astro.
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 💬 Contact
-
-📧 Email: [contact@cojocarudavid.me](mailto:contact@cojocarudavid.me)
-
-### 🌐 Connect with Me
-
-- [LinkedIn](https://www.linkedin.com/in/cojocaru-david)
-- [Blog](https://cojocarudavid.me/blog)
+- **Build:**
+  ```sh
+  npm run build
+  # o
+  yarn build
+  ```
+- Sube la carpeta `dist/` al hosting de tu preferencia.
 
 ---
 
-## ⭐ Show Your Support
+## 💬 Frases célebres dinámicas
 
-If you like this project, give it a ⭐ on GitHub!
+El sitio muestra frases célebres o inspiradoras de manera aleatoria en el footer, obtenidas dinámicamente desde una base de datos en Supabase. Esto permite mantener el contenido fresco y motivacional para los visitantes, y puede ser fácilmente actualizado desde el backend sin necesidad de modificar el código fuente.
 
 ---
 
-## 🙏 Acknowledgments
+## 🤝 Contribuciones
 
-- [Astro.js](https://astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/)
+¡Las contribuciones son bienvenidas! Si deseas sugerir mejoras, reportar bugs o colaborar, por favor abre un issue o pull request siguiendo las buenas prácticas del repositorio.
+
+---
+
+## 👤 Autor
+
+- **Cristián E. Contreras Cabrera**
+- [ceccuentos.me](https://www.ceccuentos.com)
+- [LinkedIn](https://www.linkedin.com/in/cec/)
+
+---
+
+## 📄 Licencia
+
+MIT
+
+---
+
+## 🙏 Reconocimientos
+
+Este proyecto está basado en el excelente trabajo de [cojocaru-david/cojocarudavid.me](https://github.com/cojocaru-david/cojocarudavid.me). ¡Gracias por compartir tu código y diseño con la comunidad!

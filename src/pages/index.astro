@@ -2,7 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 //import authorImage from "../assets/me.png";
-import authorImage from "../assets/cec.jpeg";
+//import authorImage from "../assets/me_cec.svg";
+import authorImage from "../assets/Cec_logo2.svg";
 import Skills from "@components/Skills";
 import { title, description, country, author } from "../data/socials";
 ---
@@ -21,8 +22,8 @@ import { title, description, country, author } from "../data/socials";
       </div>
 
       <div class="relative mx-auto max-w-4xl">
-        <div class="sm:flex sm:items-center sm:justify-between sm:gap-12">
-          <div class="relative group overflow-hidden">
+        <div class="sm:flex sm:justify-between sm:gap-12">
+          <div class="overflow-hidden flex-shrink-0">
             <Image
               src={authorImage}
               alt={title}
