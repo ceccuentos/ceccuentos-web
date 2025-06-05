@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "http://ceccuentos.com/:path*",
+      "destination": "https://www.ceccuentos.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "http://www.ceccuentos.com/:path*",
+      "destination": "https://www.ceccuentos.com/:path*",
+      "permanent": true
+    }
+  ]
+}
