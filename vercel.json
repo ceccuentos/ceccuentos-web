@@ -5,12 +5,6 @@
       "has": [{ "type": "host", "value": "ceccuentos.com" }],
       "destination": "https://www.ceccuentos.com/:path*",
       "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.ceccuentos.com" }],
-      "destination": "https://www.ceccuentos.com/:path*",
-      "permanent": true
     }
   ]
 }
