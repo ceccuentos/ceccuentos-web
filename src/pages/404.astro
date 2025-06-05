@@ -27,10 +27,12 @@ const description = "Lo siento, la página que estás buscando no existe.";
 
 <AppLayout title={title} description={description}>
   <div
-    class="flex flex-col items-center justify-center h-screen text-center text-neutral-300"
+    class="flex flex-col items-center justify-center h-screen text-center text-neutral-800"
   >
-    <h1 class="font-bold text-4xl mb-4 text-center">404</h1>
-    <p class="text-xl font-thin text-center">{description}</p>
+    <h1 class="font-bold text-4xl mb-4 text-center text-neutral-900">404</h1>
+    <p class="text-xl font-normal text-center text-neutral-700">
+      {description}
+    </p>
 
     <a
       class="px-4 py-2 mt-4 text-center bg-neutral-800 text-neutral-100 rounded-md cursor-pointer hover:bg-neutral-700 transition duration-200 ease-in-out"

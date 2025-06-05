@@ -9,6 +9,11 @@
       "source": "http://www.ceccuentos.com/:path*",
       "destination": "https://www.ceccuentos.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "https://ceccuentos.com/:path*",
+      "destination": "https://www.ceccuentos.com/:path*",
+      "permanent": true
     }
   ]
 }
