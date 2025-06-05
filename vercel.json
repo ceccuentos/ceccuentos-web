@@ -1,17 +1,14 @@
 {
   "redirects": [
     {
-      "source": "http://ceccuentos.com/:path*",
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "ceccuentos.com" }],
       "destination": "https://www.ceccuentos.com/:path*",
       "permanent": true
     },
     {
-      "source": "http://www.ceccuentos.com/:path*",
-      "destination": "https://www.ceccuentos.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://ceccuentos.com/:path*",
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ceccuentos.com" }],
       "destination": "https://www.ceccuentos.com/:path*",
       "permanent": true
     }
